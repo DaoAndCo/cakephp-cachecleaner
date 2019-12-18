@@ -27,8 +27,8 @@ class DirTask extends Shell implements TaskInterface {
     public function getOptionParser() {
         $parser = new ConsoleOptionParser('console');
         $parser
-            ->description('Clear directories in "tmp/cache/"')
-            ->command("dir")
+            ->setDescription('Clear directories in "tmp/cache/"')
+            ->setCommand("dir")
             ->addOption('all', [
                 'short' => 'a',
                 'help' => 'Clear all directories',

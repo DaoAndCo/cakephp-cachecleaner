@@ -36,8 +36,8 @@ class ClearShell extends Shell {
     {
         $parser = new ConsoleOptionParser('console');
         $parser
-            ->description("This shell clean the cache of your application.")
-            ->command("cache.clear")
+            ->setDescription("This shell clean the cache of your application.")
+            ->setCommand("cache.clear")
             ->addOption('all', [
                 'short' => 'a',
                 'help' => 'Clear all caches',
