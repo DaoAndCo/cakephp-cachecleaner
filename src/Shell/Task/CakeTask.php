@@ -10,8 +10,8 @@ class CakeTask extends Shell implements TaskInterface {
     public function getOptionParser() {
         $parser = new ConsoleOptionParser('console');
         $parser
-            ->description("Clear Cake\Cache\Cache")
-            ->command("cake")
+            ->setDescription("Clear Cake\Cache\Cache")
+            ->setCommand("cake")
             ;
         return $parser;
     }

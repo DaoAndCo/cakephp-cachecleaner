@@ -9,8 +9,8 @@ class OrmTask extends Shell implements TaskInterface {
     public function getOptionParser() {
         $parser = new ConsoleOptionParser('console');
         $parser
-            ->description("Clear ORM Cache.")
-            ->command("model")
+            ->setDescription("Clear ORM Cache.")
+            ->setCommand("model")
             ;
         return $parser;
     }

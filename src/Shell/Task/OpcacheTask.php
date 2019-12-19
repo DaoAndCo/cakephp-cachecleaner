@@ -9,8 +9,8 @@ class OpcacheTask extends Shell implements TaskInterface {
     public function getOptionParser() {
         $parser = new ConsoleOptionParser('console');
         $parser
-            ->description("Resets the entire opcode cache")
-            ->command("opcache")
+            ->setDescription("Resets the entire opcode cache")
+            ->setCommand("opcache")
             ;
         return $parser;
     }
