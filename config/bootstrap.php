@@ -1,5 +1,5 @@
 <?php
 use Cake\Core\Configure;
 
-if ( ! Configure::check('CacheClear') )
+if ( ! Configure::check('CacheCleaner') )
     Configure::load('CacheCleaner.config', 'default');
